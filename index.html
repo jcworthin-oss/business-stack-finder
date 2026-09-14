@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Business Stack Finder | Find the Right Software for Your Business</title>
+  <meta name="description" content="Answer five practical questions and get a focused small-business software shortlist for CRM, scheduling, payroll, invoicing, ecommerce, and marketing.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="/">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d1b2a'/%3E%3Cpath d='M16 18h32v8H16zm0 12h22v8H16zm0 12h14v8H16z' fill='%235be7c4'/%3E%3C/svg%3E">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Business Stack Finder","applicationCategory":"BusinessApplication","description":"An independent software matching tool for small businesses.","operatingSystem":"Web"}</script>
+</head>
+<body>
+  <a class="skip-link" href="#matcher">Skip to software matcher</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Business Stack Finder home"><span class="brand-mark">BS</span><span>Business Stack Finder</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#matcher">Find software</a>
+      <a href="#guides">Buying guides</a>
+      <a href="#method">How we choose</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="matcher-shell" id="matcher">
+      <div class="intro">
+        <p class="eyebrow">Independent software matching</p>
+        <h1>Build a smarter business stack in two minutes.</h1>
+        <p class="lede">Tell us how your business operates. We’ll narrow hundreds of options to a practical shortlist based on your workflow, team, and budget.</p>
+        <div class="trust-row" aria-label="Benefits">
+          <span>✓ No signup</span><span>✓ Clear reasoning</span><span>✓ Vendor support</span>
+        </div>
+      </div>
+
+      <form class="matcher-card" id="stack-form">
+        <div class="progress"><span id="progress-bar"></span></div>
+        <p class="step-count" id="step-count">Question 1 of 5</p>
+
+        <fieldset class="question active" data-step="1">
+          <legend>What kind of business do you run?</legend>
+          <div class="choice-grid">
+            <label><input type="radio" name="industry" value="field" required><span><b>Home services</b><small>HVAC, plumbing, electrical, lawn or cleaning</small></span></label>
+            <label><input type="radio" name="industry" value="professional"><span><b>Professional services</b><small>Consulting, legal, accounting or agencies</small></span></label>
+            <label><input type="radio" name="industry" value="retail"><span><b>Retail or ecommerce</b><small>Products sold online or in person</small></span></label>
+            <label><input type="radio" name="industry" value="general"><span><b>Another small business</b><small>A flexible recommendation across industries</small></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question" data-step="2">
+          <legend>How large is your team?</legend>
+          <div class="choice-row">
+            <label><input type="radio" name="team" value="solo" required><span>Just me</span></label>
+            <label><input type="radio" name="team" value="small"><span>2–10</span></label>
+            <label><input type="radio" name="team" value="growing"><span>11–50</span></label>
+            <label><input type="radio" name="team" value="large"><span>51+</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question" data-step="3">
+          <legend>What do you most need to improve?</legend>
+          <div class="choice-grid compact">
+            <label><input type="radio" name="priority" value="crm" required><span><b>Sales and CRM</b><small>Track leads and follow-ups</small></span></label>
+            <label><input type="radio" name="priority" value="scheduling"><span><b>Scheduling</b><small>Book, dispatch and manage jobs</small></span></label>
+            <label><input type="radio" name="priority" value="payroll"><span><b>Payroll and people</b><small>Pay and manage a team</small></span></label>
+            <label><input type="radio" name="priority" value="commerce"><span><b>Online sales</b><small>Launch or improve a store</small></span></label>
+            <label><input type="radio" name="priority" value="invoicing"><span><b>Invoicing</b><small>Quote, bill and collect</small></span></label>
+            <label><input type="radio" name="priority" value="marketing"><span><b>Marketing</b><small>Generate more qualified traffic</small></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question" data-step="4">
+          <legend>What is your monthly software budget?</legend>
+          <div class="choice-row">
+            <label><input type="radio" name="budget" value="lean" required><span>Under $50</span></label>
+            <label><input type="radio" name="budget" value="standard"><span>$50–$200</span></label>
+            <label><input type="radio" name="budget" value="premium"><span>$200–$500</span></label>
+            <label><input type="radio" name="budget" value="flexible"><span>Flexible</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question" data-step="5">
+          <legend>Which approach sounds better?</legend>
+          <div class="choice-grid">
+            <label><input type="radio" name="approach" value="simple" required><span><b>Keep it simple</b><small>Fewer tools and an easier setup</small></span></label>
+            <label><input type="radio" name="approach" value="best"><span><b>Use the best specialist</b><small>Combine tools for stronger capabilities</small></span></label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="button secondary" type="button" id="back" disabled>Back</button>
+          <button class="button primary" type="button" id="next">Continue</button>
+        </div>
+        <p class="form-error" id="form-error" role="alert"></p>
+      </form>
+    </section>
+
+    <section class="results-section" id="results" hidden aria-live="polite">
+      <div class="section-heading">
+        <p class="eyebrow">Your shortlist</p>
+        <h2>Three tools worth evaluating first</h2>
+        <p>Recommendations reflect your answers, not sponsorship. Always verify current pricing and features with the vendor.</p>
+      </div>
+      <div class="result-grid" id="result-grid"></div>
+      <button class="text-button" id="restart" type="button">Start over</button>
+    </section>
+
+    <section class="guides-section" id="guides">
+      <div class="section-heading">
+        <p class="eyebrow">Research before you subscribe</p>
+        <h2>Focused buying guides for expensive decisions.</h2>
+      </div>
+      <div class="guide-grid">
+        <a class="guide-card" href="guides/field-service-software.html"><span>Field operations</span><h3>Best field-service software for small teams</h3><p>Compare scheduling, dispatch, estimates, invoices, and customer communication.</p><b>Read the guide →</b></a>
+        <a class="guide-card" href="guides/crm-small-business.html"><span>Sales</span><h3>How to choose a small-business CRM</h3><p>Match pipeline complexity, automation, reporting, and budget to the right type of CRM.</p><b>Read the guide →</b></a>
+        <a class="guide-card" href="guides/payroll-software.html"><span>People</span><h3>Payroll software without unnecessary complexity</h3><p>Understand payroll, tax filing, benefits, time tracking, and true monthly cost.</p><b>Read the guide →</b></a>
+      </div>
+    </section>
+
+    <section class="method-section" id="method">
+      <div>
+        <p class="eyebrow">Our method</p>
+        <h2>Useful recommendations require more than a feature list.</h2>
+      </div>
+      <ol>
+        <li><b>Start with the job.</b><span>We score software against the workflow you need to improve.</span></li>
+        <li><b>Account for fit.</b><span>Team size, industry, budget, and setup preference change the answer.</span></li>
+        <li><b>Explain the tradeoff.</b><span>Every recommendation includes a reason to consider it and a reason to pause.</span></li>
+      </ol>
+    </section>
+
+    <section class="faq-section">
+      <div class="section-heading"><p class="eyebrow">Common questions</p><h2>Before you choose</h2></div>
+      <details><summary>Does Business Stack Finder sell software?</summary><p>No. Purchases, subscriptions, cancellations, refunds, onboarding, and customer support are handled by the software provider.</p></details>
+      <details><summary>Do affiliate relationships determine rankings?</summary><p>No. Recommendations are generated from the answers provided and our published selection criteria. We may earn a commission from certain outbound links without increasing your price.</p></details>
+      <details><summary>Is pricing guaranteed?</summary><p>No. Software vendors can change prices, plans, and features at any time. Confirm important details directly with the vendor before subscribing.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark">BS</span><span>Business Stack Finder</span></div>
+    <p>Independent guidance for building a practical small-business software stack.</p>
+    <div><a href="disclosure.html">Affiliate disclosure</a><a href="privacy.html">Privacy</a></div>
+    <small>© <span id="year"></span> Business Stack Finder. Product names belong to their respective owners.</small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
